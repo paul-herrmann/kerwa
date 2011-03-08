@@ -9,8 +9,8 @@
 	
 	$link = $result[0]['link'];
 	
-	$description = "woot";
-	$img = "imgz/" . $link;
+	$description = "";
+	$img = "uploads/" . $link;
 ?>
 
 <html>
@@ -42,7 +42,7 @@
 	<?php
 
 
-	echo "<div class='box'><div class='movie'><div class='title'><center>" . $result[0]['name'] . "</center></div><center><img src='imgz/" . $link . "' /></center><BR />
+	echo "<div class='box'><div class='movie'><div class='title'><center>" . $result[0]['name'] . "</center></div><center><img src='uploads/" . $link . "' /></center><BR />
 					
 				<div style='margin-left:auto;margin-right:auto;padding:5px 5px 5px 0;'><BR />
 				<center>

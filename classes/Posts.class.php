@@ -85,7 +85,7 @@
 					$_SESSION['msg'] = "Error: " . $error . "<br />";
 				} else {
 			
-						if (file_exists("imgz/" . $filename)) {
+						if (file_exists("uploads/" . $filename)) {
 						$_SESSION['msg'] = "Istnieje juz plik o podanej nazwie";header("location:admin.php");exit;
 					} else {
 					
@@ -96,7 +96,7 @@
 						$id = $result[0]['id'];
 						$link = md5($id) . $filename;
 						$this->db->exec("UPDATE img SET link='$link' WHERE id='$id'");
-						move_uploaded_file($tmp_name, "imgz/" . md5($id) . $filename);
+						move_uploaded_file($tmp_name, "uploads/" . md5($id) . $filename);
 						$msg = "dodano zdjecie.";
 						
 				}
