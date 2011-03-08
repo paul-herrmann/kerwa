@@ -7,7 +7,7 @@ $up_id = uniqid();
 <?php
 	include_once('config.inc.php');
 	
-	session_save_path('sessions/');
+	
 	session_start();
 	include_once('classes/Users.class.php');
 	
@@ -33,38 +33,6 @@ $up_id = uniqid();
 <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
 <!-- <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" /> -->
 <title>kerwa.pl</title>
-<script type="text/javascript" src="jquery.js"></script>
-<script type="text/javascript"> 
-
-
-$(document).ready(function() {  
-// 
-
-//show the progress bar only if a file field was clicked 
-    var show_bar = 0; 
-    $('input[type="file"]').click(function(){ 
-        show_bar = 1; 
-    }); 
-
-//show iframe on form submit 
-    $("#form1").submit(function(){ 
-
-        if (show_bar === 1) {  
-            $('#upload_frame').show(); 
-            function set () { 
-                $('#upload_frame').attr('src','upload_frame.php?up_id=<?php echo $up_id; ?>'); 
-            } 
-            setTimeout(set); 
-        } 
-    }); 
-// 
-
-}); 
-
-  
-  
-
-</script>
 
 </head>
 

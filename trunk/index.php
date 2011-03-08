@@ -51,7 +51,7 @@
 	foreach ($result as $instance) {   //generuje posty
 		$link = $instance['link'];
 		$id = $instance['id'];
-		echo "<div class='box'><div class='movie'><BR /><center><a href='page.php?id=" . $id . "' ><img src='imgz/" . $link . "' /></a></center><BR />
+		echo "<div class='box'><div class='movie'><BR /><center><a href='page.php?id=" . $id . "' ><img src='uploads/" . $link . "' /></a></center><BR />
 					
 				<div style='margin-left:auto;margin-right:auto;padding:5px 5px 5px 0;'><BR />
 				<center>
