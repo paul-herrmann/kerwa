@@ -1,0 +1,4 @@
+# Generic blog/photoblog #
+
+
+---
